@@ -8,7 +8,7 @@
         <VBox>
             <VBox fitContainer="true"
                 class="sapUiMediumMargin">
-                <Title text="Sample 01: ComboBox Component (Secondary Values, Placeholder and Dynamic Tooltip) (Simple implementation)" />
+                <Text text="Sample 01: ComboBox Component (Secondary Values, Placeholder and Dynamic Tooltip) (Simple implementation)" />
                 <ComboBox showSecondaryValues= "true"
                     selectedKey="{viewModel>/selectedPrinter}"
                     selectionChange="onComboBoxSelectionChange"
@@ -23,7 +23,7 @@
             </VBox>
             <VBox fitContainer="true"
                 class="sapUiMediumMargin">
-                <Title text="Sample 02: ComboBox Component (Same as sample 01 with popover as tooltip) (It needs many custom implementations)" />
+                <Text text="Sample 02: ComboBox Component (Same as sample 01 with popover as tooltip) (It needs many custom implementations)" />
                 <ComboBox id="combobox-with-popover"
                     selectedKey="{viewModel>/selectedPrinter2}"
                     selectionChange="onComboBoxSelectionChange2"
@@ -38,14 +38,14 @@
             </VBox>
             <VBox fitContainer="true"
                 class="sapUiMediumMargin">
-                <Title text="Sample 03: Dynamic tooltip with data from another UI component (First ComboBox Value)" />
+                <Text text="Sample 03: Dynamic tooltip with data from another UI component (First ComboBox Value)" />
                 <Button id="button-01"
                     tooltip="None selected"
                     text="Printer 01" />
             </VBox>
             <VBox fitContainer="true"
                 class="sapUiMediumMargin">
-                <Title text="Sample 04: Dynamic tooltip with data from another UI component (Second ComboBox Value), enabled only if a printer is selected" />
+                <Text text="Sample 04: Dynamic tooltip with data from another UI component (Second ComboBox Value), enabled only if a printer is selected" />
                 <Button id="button-02"
                     tooltip="None selected"
                     text="Printer 02"
