@@ -1,0 +1,59 @@
+<mvc:View controllerName="ein.codes.poc.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page"
+        title="{i18n>title}">
+
+        <VBox>
+            <VBox fitContainer="true"
+                class="sapUiMediumMargin">
+                <Title text="Sample 01: ComboBox Component (Secondary Values, Placeholder and Dynamic Tooltip) (Simple implementation)" />
+                <ComboBox showSecondaryValues= "true"
+                    selectedKey="{viewModel>/selectedPrinter}"
+                    selectionChange="onComboBoxSelectionChange"
+                    placeholder="Select a Printer"
+                    items="{mockModel>/printers}"
+                    tooltip="None selected"
+                    width="100%">
+                    <core:ListItem key="{mockModel>key}"
+                        text="{mockModel>desc}"
+                        additionalText="{mockModel>key}" />
+                </ComboBox>
+            </VBox>
+            <VBox fitContainer="true"
+                class="sapUiMediumMargin">
+                <Title text="Sample 02: ComboBox Component (Same as sample 01 with popover as tooltip) (It needs many custom implementations)" />
+                <ComboBox id="combobox-with-popover"
+                    selectedKey="{viewModel>/selectedPrinter2}"
+                    selectionChange="onComboBoxSelectionChange2"
+                    placeholder="Select a Printer"
+                    items="{mockModel>/printers}"
+                    showSecondaryValues= "true"
+                    width="100%">
+                    <core:ListItem key="{mockModel>key}"
+                        text="{mockModel>desc}"
+                        additionalText="{mockModel>key}" />
+                </ComboBox>
+            </VBox>
+            <VBox fitContainer="true"
+                class="sapUiMediumMargin">
+                <Title text="Sample 03: Dynamic tooltip with data from another UI component (First ComboBox Value)" />
+                <Button id="button-01"
+                    tooltip="None selected"
+                    text="Printer 01" />
+            </VBox>
+            <VBox fitContainer="true"
+                class="sapUiMediumMargin">
+                <Title text="Sample 04: Dynamic tooltip with data from another UI component (Second ComboBox Value), enabled only if a printer is selected" />
+                <Button id="button-02"
+                    tooltip="None selected"
+                    text="Printer 02"
+                    enabled="false" />
+            </VBox>
+            <layoutData>
+                <FlexItemData growFactor="1" />
+            </layoutData>
+        </VBox>
+    </Page>
+</mvc:View>

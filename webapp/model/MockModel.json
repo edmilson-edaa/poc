@@ -1,0 +1,44 @@
+{
+    "printers": [
+        {
+            "key": "/KYK/PDF",
+            "desc": "PDF ISO Latin-1 4.6D+"
+        },
+        {
+            "key": "ADSPOST",
+            "desc": "Adriatics PS (note 1041623)"
+        },
+        {
+            "key": "ARC262",
+            "desc": "Sharp AR-C262M PCL5 R4.5+"
+        },
+        {
+            "key": "ARC262P",
+            "desc": "Sharp AR-C262M PCL5 R4.5+"
+        },
+        {
+            "key": "ARCHIIXOS",
+            "desc": "SAP ArchiveLink Archiver"
+        },
+        {
+            "key": "ARCHLINK",
+            "desc": "SAP ArchiveLink Archiver"
+        },
+        {
+            "key": "ARCHUTF8",
+            "desc": "SAP ArchiveLink Unicode UTF-8"
+        },
+        {
+            "key": "ARM205",
+            "desc": "Sharp AR-M205 R4.5+"
+        },
+        {
+            "key": "ARM276",
+            "desc": "Sharp AR-M276 R4.5+"
+        },
+        {
+            "key": "ARM450",
+            "desc": "Sharp AR-M450 R4.5+"
+        }
+    ]
+}
